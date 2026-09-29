@@ -5,7 +5,8 @@
   "type": "module",
   "main": "src/scrape.js",
   "scripts": {
-    "scrape": "node src/scrape.js"
+    "scrape": "node src/scrape.js",
+    "product": "node src/product.js"
   },
   "dependencies": {
     "playwright": "^1.48.0",

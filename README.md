@@ -16,3 +16,11 @@ npm run scrape -- https://example.com --selector "h1"
 Результат: `output/result.json`, `output/page.png`.
 
 Соблюдайте условия использования сайта и robots.txt.
+
+## Карточка товара Ozon
+
+```bash
+npm run product -- "https://www.ozon.ru/product/<slug>-<id>/" [--headful]
+```
+
+Достаёт `name`, `price`, `currency`, `description`, `image` из JSON-LD/мета-тегов и пишет в `output/product.json`. Если вместо товара пришла страница защиты, скрипт завершится с кодом 2 и сохранит `output/blocked.png`.
